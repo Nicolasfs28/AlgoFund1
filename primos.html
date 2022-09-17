@@ -1,0 +1,16 @@
+<meta charset = "UTF-8">
+<script>
+    var numPrimo
+    var numDivisores=0
+    numPrimo=parseInt(prompt("Digite um número"))
+    for(var i=1; i<=numPrimo;i++){
+        if(numPrimo%i==0)
+        numDivisores++
+    }
+    if(numDivisores==2){
+        console.log("O número digitado é primo")
+    }else{
+        console.log("O número digitado não é primo")
+    }
+
+</script>

@@ -1,0 +1,19 @@
+<meta charsert = "UTF-8">
+<script>
+    var num1= parseInt(prompt("Digite o primeiro número"))
+    var num2= parseInt(prompt("Digite o segundo número"))
+    var menor, maior
+    if(num1>num2){
+        maior=num1
+        menor=num2
+    }else{
+        maior=num2
+        menor=num1
+    }var aux=0
+    while((maior%menor)!=0){
+        aux=menor
+        menor=(maior%menor)
+        maior=aux
+    }
+    console.log("MDC de ("+ num1 + " , "+ num2 + ") = " + menor)
+</script>
